@@ -1,0 +1,130 @@
+ssh-keygen
+pone esto: cat $HOME/.ssh/*.pub
+cat ~/.ssh/id_rsa.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:scabraltome/TP_AySO.git
+./TP_AySO
+cd TP_AySo
+cd /TP_AySo
+ls -l  
+cat
+cd repogit/TP_AySO
+ls -l
+Is la
+ls la
+rm -f datos_usuario.txt info_pc.txt lista_ordenada
+git reset --hard origin/main
+ls
+README.md
+cd repogit/TP_AySO
+rm -f datos_usuario.txt info_pc.txt lista_ordenada
+git reset --hard origin/main
+ssh-keygen
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:scabraltome/TP_AySO.git
+cd ./Tp_AySO
+cd TP_AySO
+ls -l
+cat /etc/passwd
+man grep
+grep UBUNTU /etc/passwd
+grep ubuntu /etc/passwd
+grep -i Ubuntu /etc/passwd
+grep -i ubuntu /etc/passwd | awk -F: '{print $2}' > datos_usuario.txt
+cat datos_usuario.txt
+whoami
+"Usuario=$(whoami)" >> datos_usuario.txt
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+git add
+git add .
+git add.
+git add . 
+git commit -m "feat: agregar ejercicio de datos_usuario.txt"
+git config --global user.email "scabraltome@gmail.com"
+git config --global user.name "selene-cabral"
+git commit -m "feat: agregar ejercicio de datos_usuario.txt"
+git push origin main
+cat ~/.ssh/id_rsa.pub
+git push origin main
+grep "model name" /proc/cpuinfo | head -n 1 > info_pc.txt
+git add info_pc.txt
+git commit -m "feat: Añadiendo información de CPU"
+git push origin main
+grep -v nologin /etc/passwd | head -n 10 | sort -t: -k7 > lista_ordenada
+cat lista_ordenada
+git add lista_ordenada
+git commit -m "ADD: Listado de usuarios ordenada"
+git push origin main
+cat << 'EOF' >> README.md
+Alumno: Selene Cabral
+División: <Tu-División>
+Turno: <Tu-Turno>
+EOF
+
+cat README.md
+cat << 'EOF' >> README.md
+Alumno: Selene Cabral
+División: 106
+Turno: Mañana
+EOF
+
+cat REAME.md
+cat << 'EOF' >> README.md
+Alumno: Selene Cabral
+División: 106
+Turno: Mañana
+EOF
+
+git push origin main
+# 1. Limpiamos el README para sacar el texto duplicado
+git checkout README.md
+# 2. Volvemos a escribir tus datos una sola vez
+cat << 'EOF' >> README.md
+Alumno: Selene Cabral
+División: 106
+Turno: Mañana
+EOF
+
+# 3. Guardamos el README en Git
+git add README.md
+git commit -m "docs: actualizar informacion del alumno en README"
+# 4. Creamos las carpetas del Punto 7 (Árbol de directorios)
+mkdir -p arbol_directorios/ejercicio1 arbol_directorios/ejercicio2/subejercicio2
+# 5. Guardamos la estructura de carpetas en Git
+git add arbol_directorios/
+git commit -m "ADD: creacion de la estructura arbol_directorios"
+# 6. ¡Subimos TODO junto a GitHub! �
+git push origin main
+clear
+git checkout README.md
+cat << 'EOF' >> README.md
+Alumno: Selene Cabral
+Divisi��n: 106
+Turno: Maóñana
+EOF
+
+git add README.md
+git commit -m "docs: actualizar informacion del alumno en README"
+mkdir -p arbol_directorios/ejercicio1 arbol_directorios/ejercicio2/subejercicio2
+git add arbol_directorios/
+git commit -m "ADD: creacion de la estructura arbol_directorios"
+git push origin main
+touch arbol_directorios/ejercicio1/.gitkeep
+touch arbol_directorios/ejercicio2/subejercicio2/.gitkeep
+git add arbol_directorios/
+git commit -m "ADD: subir estructura de carpetas completas"
+git push origin main
+clear
+cat << 'EOF' > script_dir.sh
+mkdir -p TP1/arquitectura/Clase{1,2,3,4,5} TP1/so/Clase{1,2,3,4,5,6}
+EOF
+
+chmod +x script_dir.sh
+git add script_dir.sh
+git commit -m "ADD: Añadiendo script"
+git push origin main
+history -a
